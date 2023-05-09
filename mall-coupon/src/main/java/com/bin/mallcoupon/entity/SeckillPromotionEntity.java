@@ -12,7 +12,7 @@ import lombok.Data;
  * 
  * @author bin
  * @email 1239279122@qq.com
- * @date 2023-05-08 11:27:38
+ * @date 2023-05-09 10:48:12
  */
 @Data
 @TableName("sms_seckill_promotion")
@@ -25,7 +25,7 @@ public class SeckillPromotionEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 活动标题
+	 * 
 	 */
 	private String title;
 	/**

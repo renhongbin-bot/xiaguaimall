@@ -12,7 +12,7 @@ import lombok.Data;
  * 
  * @author bin
  * @email 1239279122@qq.com
- * @date 2023-05-08 11:27:37
+ * @date 2023-05-09 10:48:13
  */
 @Data
 @TableName("sms_home_adv")
@@ -25,11 +25,11 @@ public class HomeAdvEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 名字
+	 * 
 	 */
 	private String name;
 	/**
-	 * 图片地址
+	 * 
 	 */
 	private String pic;
 	/**
@@ -53,7 +53,7 @@ public class HomeAdvEntity implements Serializable {
 	 */
 	private String url;
 	/**
-	 * 备注
+	 * 
 	 */
 	private String note;
 	/**

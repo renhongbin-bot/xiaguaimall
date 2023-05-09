@@ -17,7 +17,7 @@ class MallProductApplicationTests {
 
 	@Test
 	void contextLoads() {
-		var brandEntity = new BrandEntity();
+		BrandEntity brandEntity = new BrandEntity();
 
 //		brandEntity.setName("小米");
 //		brandService.save(brandEntity);
@@ -27,7 +27,7 @@ class MallProductApplicationTests {
 //		brandEntity.setDescript("小米");
 //		brandService.updateById(brandEntity);
 
-		var list = brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id", 11L));
+		List<BrandEntity> list = brandService.list(new QueryWrapper<BrandEntity>().eq("brand_id", 11L));
 		list.forEach((item) -> {
 			System.out.println(item);
 		});

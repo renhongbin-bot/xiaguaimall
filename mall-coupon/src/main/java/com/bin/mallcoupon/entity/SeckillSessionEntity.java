@@ -12,7 +12,7 @@ import lombok.Data;
  * 
  * @author bin
  * @email 1239279122@qq.com
- * @date 2023-05-08 11:27:38
+ * @date 2023-05-09 10:48:12
  */
 @Data
 @TableName("sms_seckill_session")
@@ -25,7 +25,7 @@ public class SeckillSessionEntity implements Serializable {
 	@TableId
 	private Long id;
 	/**
-	 * 场次名称
+	 * 
 	 */
 	private String name;
 	/**

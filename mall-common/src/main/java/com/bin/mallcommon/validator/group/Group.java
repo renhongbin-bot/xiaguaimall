@@ -8,6 +8,8 @@
 
 package com.bin.mallcommon.validator.group;
 
+//import jakarta.validation.GroupSequence;
+
 import javax.validation.GroupSequence;
 
 /**

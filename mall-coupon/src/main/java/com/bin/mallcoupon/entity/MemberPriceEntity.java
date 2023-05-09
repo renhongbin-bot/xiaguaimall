@@ -13,7 +13,7 @@ import lombok.Data;
  * 
  * @author bin
  * @email 1239279122@qq.com
- * @date 2023-05-08 11:27:37
+ * @date 2023-05-09 10:48:12
  */
 @Data
 @TableName("sms_member_price")
@@ -34,7 +34,7 @@ public class MemberPriceEntity implements Serializable {
 	 */
 	private Long memberLevelId;
 	/**
-	 * 会员等级名
+	 * 
 	 */
 	private String memberLevelName;
 	/**

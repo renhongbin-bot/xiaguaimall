@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    nacos:
+      config:
+#        配置中心地址
+        server-addr: 127.0.0.1:8848
+#        配置中心命名空间,区分环境
+        namespace: coupon
+#        配置组 prod, dev, test
+        group: prod
+        ext-config[0]:
+          data-id: datasource.yml
+          group: dev
+          refresh: true
+        ext-config[1]:
+          data-id: mybatis.yml
+          group: dev
+          refresh: true
+        ext-config[2]:
+          data-id: cloud.yml
+          group: dev
+          refresh: true
+        ext-config[3]:
+          data-id: other.yml
+          group: dev
+          refresh: true
+  config:
+    #    设置dataId: nacos-config-coupon.properties
+    import:
+      - nacos:nacos-config-coupon.properties?refresh=true
